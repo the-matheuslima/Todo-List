@@ -1,0 +1,116 @@
+.App {
+  width: 100%;
+  // background-color: #444;
+  margin: 4rem;
+  padding: 2rem;
+  text-align: center;
+  margin: auto;
+
+  h1 {
+    font-size: 3.5rem;
+    color: #fafafa;
+    font-family: "Macondo", cursive;
+  }
+
+  .app__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    padding: 1rem;
+    margin: auto;
+    gap: 5px;
+
+    .app__form-input {
+      height: 40px;
+      width: 100%;
+      font-size: 1.2rem;
+      flex: 2;
+      outline: none;
+      padding: 10px;
+    }
+
+    .app__form-submit {
+      flex: 1;
+      height: 40px;
+      padding: 10px;
+      background-color: rgb(227, 71, 71);
+      border: none;
+      color: #fafafa;
+    }
+  }
+
+  .app__list {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 10px;
+    margin: auto;
+    border-radius: 20px;
+    background-color: rgb(235 222 222 / 17%);
+    backdrop-filter: blur(141px);
+
+    .app__container {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      background:rgba(22, 21, 24, 0.716);
+      backdrop-filter: blur(43px);
+      padding: 5px;
+      border-radius: 10px;
+
+      .app__btns{
+        display: flex;
+        gap: 5px;
+        flex-wrap: wrap;
+      }
+
+      .app__list-items {
+        font-size: 1.2rem;
+        padding: 1rem;
+        font-weight: 600;
+        color: #fafafa;
+      }
+    }
+
+    .app__btn {
+      width: 50px;
+      height: 50px;
+      font-size: 1.5rem;
+      text-align: center;
+      border: none;
+      margin-left: 5px;
+
+      &:hover {
+        border: 2px solid rgb(57, 57, 57);
+      }
+    }
+
+    .completed-btn {
+      background-color: rgb(81, 221, 81);
+
+      &:hover{
+        background-color: rgb(66, 181, 66);
+      }
+    }
+
+    .remove-btn {
+      background-color: rgb(128, 58, 32);
+
+      &:hover{
+        background-color: rgb(81, 36, 19);
+      }
+    }
+  }
+
+  .completed {
+    font-weight: bold;
+    text-decoration: line-through;
+    opacity: 0.5;
+  }
+}
